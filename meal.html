@@ -10,9 +10,28 @@
 </head>
 <body>
     <header>
-        <h1>Exploring Food</h1>
+        <h1 class="text-center text-orange">Exploring Food</h1>
     </header>
     <main>
+        <section>
+            <h2>Meal Details </h2>
+            <div id="details_container">
+                <div class="card" style="width: 18rem;">
+                    <img src="..." class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Card title</h5>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                  </div>
+
+            </div>
+        </section>
+
+        <section class="text-center w-full">
+            <input id="search_filed" type="text" placeholder="search Your Food">
+            <button onclick="searchFood()" class="btn btn-primary">Search</button>
+        </section>
         <section>
             <h2>My Meals </h2>
             <div id="meal-container" class="row row-cols-1 row-cols-md-3 g-4">
