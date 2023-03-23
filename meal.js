@@ -50,11 +50,26 @@ const displayMealDetails = (idmeal) =>
 }
 
 
-const displayMealShow = () =>
+const displayMealShow = (meal) =>
 {
    const details_Container = document.getElementById('details_container');
+
+   const cardDiv = document.createElement('div');
+   cardDiv.classList.add('card');
+   cardDiv.innerHTML = `
+            <img src="${meal.strMealThumb
+            }" class="card-img-top" alt="...">
+                 <div class="card-body">
+                      <h5 class="card-title">Card title</h5>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
    
+   
+   `
+   console.log(cardDiv);
+   details_Container.appendChild(cardDiv);
 
    
 }
-loadMeals ('');
+// loadMeals ('');
