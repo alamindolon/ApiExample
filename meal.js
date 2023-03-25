@@ -67,7 +67,7 @@ const displayMealShow = (meal) =>
    
    
    `
-   console.log(cardDiv);
+//    console.log(cardDiv);
    details_Container.appendChild(cardDiv);
 
    
